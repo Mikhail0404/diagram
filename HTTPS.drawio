@@ -1,1 +1,67 @@
-<mxfile host="app.diagrams.net" modified="2022-03-21T17:43:46.571Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" version="17.1.3" etag="HH2zFXSiwxoyh2eckT-J" type="github"><diagram id="LhLmDd8sLRX-DzQguknT">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-03-21T19:17:49.392Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="z5Ub5wSab_E3Znd-9OF6" version="17.1.3" type="github">
+  <diagram id="LhLmDd8sLRX-DzQguknT" name="Page-1">
+    <mxGraphModel dx="1350" dy="773" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="B1IvHgFz59x9yWYPzJBi-2" value="&lt;h4 style=&quot;font-size: 14px ; line-height: 2&quot;&gt;HTTPS&lt;span style=&quot;font-weight: normal&quot;&gt; (&lt;span style=&quot;color: rgb(32 , 33 , 34) ; font-family: sans-serif ; background-color: rgb(255 , 255 , 255)&quot;&gt;Hypertext Transfer Protocol Secure&lt;/span&gt;) -&amp;nbsp;расширение протокола HTTP для поддержки шифрования в целях повышения безопасности. (wiki)&lt;/span&gt;&lt;/h4&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="40" width="640" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="B1IvHgFz59x9yWYPzJBi-3" value="&lt;span style=&quot;font-size: 20px&quot;&gt;HTTP&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="239" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="B1IvHgFz59x9yWYPzJBi-4" value="" style="shape=cross;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="160" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="B1IvHgFz59x9yWYPzJBi-5" value="&lt;font style=&quot;font-size: 20px&quot;&gt;SSL/TLS&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="B1IvHgFz59x9yWYPzJBi-6" value="&lt;div&gt;# генерация файла ключа с rsa шифром&lt;/div&gt;&lt;div&gt;&amp;gt; openssl genrsa -out key.pem&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;# запрос на получение сертификата и сохранение в файл&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;gt; openssl req -new -key key.pem -out csr.pem&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;# локальное подписание сертификата (только для локальной разработке)&lt;/div&gt;&lt;div&gt;&amp;gt; openssl x509 -req -days 9999 -in csr.pem -signkey&amp;nbsp;&lt;span&gt;key.pem -out cert.pem&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;# удаляем ненужный (уже) файл разрешения&lt;/div&gt;&lt;div&gt;&amp;gt;rm csr.pem&amp;nbsp;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontSize=14;align=left;" vertex="1" parent="1">
+          <mxGeometry x="80" y="640" width="640" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="B1IvHgFz59x9yWYPzJBi-8" value="&lt;ul style=&quot;box-sizing: border-box ; margin-top: 0px ; margin-bottom: 1rem ; font-family: &amp;#34;graphik lc tt&amp;#34; , sans-serif ; font-size: 18px ; text-align: left ; background-color: rgb(255 , 255 , 255) ; list-style-position: inside&quot;&gt;&lt;li style=&quot;box-sizing: border-box&quot;&gt;&lt;a href=&quot;https://nodejs.org/docs/latest-v12.x/api/https.html&quot; target=&quot;_blank&quot; style=&quot;box-sizing: border-box&quot;&gt;https://nodejs.org/docs/latest-v12.x/api/https.html&lt;/a&gt;&lt;/li&gt;&lt;li style=&quot;box-sizing: border-box&quot;&gt;&lt;a href=&quot;https://letsencrypt.org/&quot; target=&quot;_blank&quot; style=&quot;box-sizing: border-box&quot;&gt;https://letsencrypt.org/&lt;/a&gt;&lt;/li&gt;&lt;li style=&quot;box-sizing: border-box&quot;&gt;&lt;a href=&quot;https://www.sitepoint.com/how-to-use-ssltls-with-node-js/&quot; target=&quot;_blank&quot; style=&quot;box-sizing: border-box&quot;&gt;https://www.sitepoint.com/how-to-use-ssltls-with-node-js/&lt;/a&gt;&lt;/li&gt;&lt;li style=&quot;box-sizing: border-box&quot;&gt;&lt;a href=&quot;https://www.sitepoint.com/configuring-nginx-ssl-node-js/&quot; target=&quot;_blank&quot; style=&quot;box-sizing: border-box&quot;&gt;https://www.sitepoint.com/configuring-nginx-ssl-node-js/&lt;/a&gt;&lt;/li&gt;&lt;li style=&quot;box-sizing: border-box&quot;&gt;&lt;a href=&quot;https://nodejs.org/en/knowledge/HTTP/servers/how-to-create-a-HTTPS-server/&quot; target=&quot;_blank&quot; style=&quot;box-sizing: border-box&quot;&gt;https://nodejs.org/en/knowledge/HTTP/servers/how-to-create-a-HTTPS-server/&lt;/a&gt;&lt;/li&gt;&lt;li style=&quot;box-sizing: border-box&quot;&gt;&lt;a href=&quot;https://expressjs.com/en/guide/behind-proxies.html&quot; target=&quot;_blank&quot; style=&quot;box-sizing: border-box&quot;&gt;https://expressjs.com/en/guide/behind-proxies.html&lt;/a&gt;&lt;/li&gt;&lt;li style=&quot;box-sizing: border-box&quot;&gt;&lt;a href=&quot;https://vercel.com/blog/automatic-ssl-with-vercel-lets-encrypt&quot; target=&quot;_blank&quot; style=&quot;box-sizing: border-box&quot;&gt;https://vercel.com/blog/automatic-ssl-with-vercel-lets-encrypt&lt;/a&gt;&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1680" width="640" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="B1IvHgFz59x9yWYPzJBi-11" value="// чтение ключей обязательно должно быть закончено до запуска сервера =&amp;gt; readFileSync&lt;br&gt;const options = {&lt;br&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;key: fs.readFileSync(__keyFolder, &#39;key.perm&#39;),&lt;br&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;sert: fs.readFileSync(__keyFolder, &#39;sert.perm&#39;),&lt;/span&gt;&lt;/div&gt;}&lt;br&gt;&lt;br&gt;&lt;br&gt;// запуск HTTPS сервера&lt;br&gt;https.createServer(options, (req, res) =&amp;gt; {&lt;br&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;res.writeHead(200);&lt;br&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;res.end(&#39;Very secure!!!&#39;)&lt;br&gt;}).listen(3000, () =&amp;gt; {&lt;br&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;console.log(`https://localhost:3000`)&lt;br&gt;});&lt;br&gt;&lt;br&gt;&lt;br&gt;// запуск HTTPS сервера, но уже на express&lt;br&gt;&lt;br&gt;const app = express();&lt;br&gt;&lt;br&gt;app.get(&#39;/&#39;,(req, res) =&amp;gt; {&lt;br&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;res.writeHead(200);&lt;br&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;res.end(&#39;Very secure!!!&#39;)&lt;br&gt;})&lt;br&gt;&lt;br&gt;https.createServer(options, app).listen(3000, () =&amp;gt; {&lt;br&gt;&lt;span&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;console.log(`https://localhost:3000`)&lt;br&gt;});&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;align=left;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1000" width="640" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="B1IvHgFz59x9yWYPzJBi-18" value="client" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.users;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="80" y="358" width="90" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="B1IvHgFz59x9yWYPzJBi-19" value="app server" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.server;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="630" y="360.5" width="90" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="B1IvHgFz59x9yWYPzJBi-20" value="nginx (proxy)" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.proxy_server;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="347.5" y="358" width="105" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="B1IvHgFz59x9yWYPzJBi-21" value="&amp;nbsp; HTTPS&amp;nbsp;&amp;nbsp;" style="endArrow=classic;startArrow=classic;html=1;rounded=0;fontSize=14;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="411" as="sourcePoint" />
+            <mxPoint x="320" y="411" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B1IvHgFz59x9yWYPzJBi-23" value="&amp;nbsp; HTTP&amp;nbsp;&amp;nbsp;" style="endArrow=classic;startArrow=classic;html=1;rounded=0;fontSize=14;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="409.83" as="sourcePoint" />
+            <mxPoint x="600" y="409.83" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B1IvHgFz59x9yWYPzJBi-26" value="&lt;p style=&quot;line-height: 2&quot;&gt;Обратный прокси не требует настройки HTTPS в локальном сервере (приложении) и предоставляется хостингом&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="80" y="240" width="640" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="B1IvHgFz59x9yWYPzJBi-27" value="&lt;p style=&quot;line-height: 2&quot;&gt;Однако, если хостинг не предоставляет данной услуги или в других необходимых случаях, можно настроить HTTPS локально&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="80" y="520" width="640" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="B1IvHgFz59x9yWYPzJBi-28" value="&lt;p style=&quot;line-height: 2&quot;&gt;А для подключения к node необходимо будет прочитать созданные файлы ключа и сертификата и использовать их содержимое при запуске сервера&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="80" y="880" width="640" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="B1IvHgFz59x9yWYPzJBi-29" value="&lt;p style=&quot;line-height: 2&quot;&gt;Теперь сервер работает в безопасном режиме&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1520" width="640" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="B1IvHgFz59x9yWYPzJBi-30" value="&lt;p style=&quot;line-height: 2&quot;&gt;Дополнительную информацию можно изучить в следующих источниках&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1600" width="640" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
